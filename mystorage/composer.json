@@ -2,6 +2,8 @@
     "name": "mcramirez/mystorage",
     "type": "october-plugin",
     "description": "tis is my storage to make fast code",
+    "homepage": "https://github.com/miguelcr85/Mystorage.git",
+    "license": "MIT",
     "require": {
         "composer/installers": "~1.0"
     },
