@@ -1,0 +1,8 @@
+{
+    "name": "mcramirez/mystorage",
+    "type": "october-plugin",
+    "description": "tis is my storage to make fast code",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

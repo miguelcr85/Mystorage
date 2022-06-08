@@ -1,0 +1,22 @@
+{% set data = __SELF__.data.items %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="slider-principal" class="carousel-inner">
+    {% for item in data %}
+    <div class="carousel-item">
+            <img src="{{item.Picture|media}}" class="bg-imag" alt="{{item.description}}" />
+      <div class="carousel-caption d-none d-md-block">
+        <h2 class="text-dark text-uppercase my-auto">{{item.data|raw}}</h2>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+    </div>
+</div>

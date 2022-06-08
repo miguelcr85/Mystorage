@@ -1,0 +1,15 @@
+{% set data = __SELF__.data.items %}
+<div class="row justify-content-center">
+    {% for item in data %}
+    
+    <div class="zoon card bg-light p-2 m-4 text-black col-3" style="width: 18rem;">
+  <img src="{{item.Picture|media}}" class="card-img" alt="{{item.name}}">
+  <div class="card-body text-center">
+    <h5 class="card-title">{{item.name}}</h5>
+    <p class="card-text">{{item.description|raw}}</p>
+    
+  </div>
+</div> 
+    
+    {% endfor %}
+</div>

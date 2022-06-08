@@ -1,0 +1,16 @@
+{% set data = __SELF__.data.items %}
+{% set efect = __SELF__.properties.efect %}
+{% set type = __SELF__.properties.type %}
+{% set size = __SELF__.properties.size %}
+    {% for item in data %}
+<div class="card mx-auto mb-3 {% if efect != 'card-img-overlay' %} {{efect}} {% endif %} align-items-center {{size}} ">
+  <img class="card-img-top" src="{{item.Picture|media}}" alt="{{item.name}}">
+  <div class="{% if efect == 'card-img-overlay' %} card-img-overlay {% endif %}card-body text-center">
+    <h4 class="card-title">{{item.name}}</h4>
+    <p class="card-text">{{item.Description|raw}}</p>
+    <a href="#" class="btn btn-primary">See Profile </a>
+  </div>
+</div>
+
+   
+    {% endfor %}

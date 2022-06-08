@@ -1,0 +1,11 @@
+name: Mystorage
+modelClass: Mcramirez\Mystorage\Models\Mystorage
+form: $/mcramirez/mystorage/models/mystorage/fields.yaml
+defaultRedirect: mcramirez/mystorage/mystorage
+create:
+    redirect: 'mcramirez/mystorage/mystorage/update/:id'
+    redirectClose: mcramirez/mystorage/mystorage
+update:
+    redirect: mcramirez/mystorage/mystorage
+    redirectClose: mcramirez/mystorage/mystorage
+preview: {  }

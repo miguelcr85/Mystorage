@@ -1,0 +1,38 @@
+fields:
+    name:
+        label: Details
+        span: left
+        type: text
+    code:
+        label: Code
+        span: auto
+        type: text
+    items:
+        label: Storage
+        prompt: 'Add new item'
+        style: default
+        span: full
+        context:
+            - update
+            - preview
+        type: repeater
+        form:
+            fields:
+                name:
+                    label: name
+                    span: auto
+                    type: text
+                url:
+                    label: url
+                    span: auto
+                    type: text
+                description:
+                    label: Description
+                    size: large
+                    span: auto
+                    type: richeditor
+                Picture:
+                    label: Picture
+                    mode: image
+                    span: auto
+                    type: mediafinder

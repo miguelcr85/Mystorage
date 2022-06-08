@@ -1,0 +1,15 @@
+{% set data = __SELF__.data.items %}
+{% set efect = __SELF__.properties.efect %}
+{% for item in data %}
+<div class="position-relative mb-2">
+   <div class="bg-imag" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{item.Picture|media}}');">
+  <div class="{{efect}} p-4 text-center text-light">
+    <h1 class="">{{ item.name}}</h1>
+    <p>{{ item.description|raw}}</p>
+    <a href="{{item.url}}" class="btn btn-outline-light btn-lg" tabindex="-1" role="button" aria-disabled="true">Goo to</a>
+  </div>
+  </div>
+</div>
+    {% endfor %}
+
+    

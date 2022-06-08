@@ -1,0 +1,15 @@
+{% set data = __SELF__.data.items %}
+{% set type = __SELF__.properties.type %}
+
+{% if type == 'galery' %}
+
+{% partial __SELF__~"::component-galery" %}
+
+{% elseif type == 'slide' %}
+{% partial __SELF__~"::component-slider" %}
+<h1> esto es el slide</h1>
+{% elseif type == 'card' %}
+{% partial __SELF__~"::component-card" %}
+{% elseif type == 'hero-image' %}
+{% partial __SELF__~"::component-hero-image" %}
+{% endif %}

@@ -1,0 +1,11 @@
+plugin:
+    name: 'mcramirez.mystorage::lang.plugin.name'
+    description: 'mcramirez.mystorage::lang.plugin.description'
+    author: mcramirez
+    icon: oc-icon-database
+    homepage: ''
+navigation:
+    Mystorage:
+        label: Mystorage
+        url: /mcramirez/mystorage/mystorage
+        icon: icon-adn
